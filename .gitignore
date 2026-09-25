@@ -1,0 +1,32 @@
+# Environment secrets — JANGAN di-push ke GitHub!
+.env
+
+# Folder foto hasil upload (bisa sangat besar)
+photos/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Database volume (Docker)
+pgdata/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
