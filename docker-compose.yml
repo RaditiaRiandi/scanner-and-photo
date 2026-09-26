@@ -11,6 +11,8 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD:-planc_secret}
     volumes:
       - pgdata:/var/lib/postgresql/data
+    ports:
+      - "${DB_HOST_PORT:-5435}:5432"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-planc_user} -d ${DB_NAME:-planc_db}"]
       interval: 5s
